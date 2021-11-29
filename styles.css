@@ -2,21 +2,35 @@ body > table{
     width: 80%;
 }
 
+.input_form{
+    
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 35px;
+}
 table{
     border-collapse: collapse;
+    border-radius: 35px;
+}
+.btn1,.btn2{
+    padding: 6px 20px;
+    border-radius: 107px;
+}
+.a1,.a2{
+    text-decoration: none;
+    color:black;
 }
 table.list{
     width:100%;
+    align-items: center;
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid white;
     text-align: left;
     padding: 8px;
 }
-tr:nth-child(even),table.list thead>tr {
-    background-color: #dddddd;
-}
+
 
 input[type=text], input[type=number] {
     width: 100%;
@@ -28,7 +42,7 @@ input[type=text], input[type=number] {
     box-sizing: border-box;
 }
 
-input[type=submit]{
+input[type=submit], #showModal{
     width: 30%;
     background-color: #ddd;
     color: #000;
@@ -58,3 +72,39 @@ label.validation-error{
 .hide{
     display:none;
 }
+.modal {
+     display: none; /*Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70% !important; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
